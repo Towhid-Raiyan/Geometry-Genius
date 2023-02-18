@@ -32,6 +32,16 @@ function validateInput(firstValue, secondValue) {
       const result = resultfloat.toFixed(2);
       myCreateFunction('Rectangle',result);
     } 
+    else if (geometryType == "parallalogram") {
+        const resultfloat = valueA * valueB;
+        const result = resultfloat.toFixed(2);
+        myCreateFunction('Parallalogram',result);
+    } 
+      else if (geometryType == "rhombus") {
+        const resultfloat = (0.5 *  valueA * valueB);
+        const result = resultfloat.toFixed(2);
+        myCreateFunction('Rhombus',result);
+    } 
     else return 0;
 }
 
