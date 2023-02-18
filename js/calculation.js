@@ -92,3 +92,47 @@ document.getElementById('btn-rhombus').addEventListener('click',function(){
         alert('Enter Valid Number');
     }
 })
+
+// For pentagon
+document.getElementById('btn-pentagon').addEventListener('click',function(){
+    const pentagonInputFieldP = document.getElementById('pentagonFirstInput');
+    const pentagonInputFieldB = document.getElementById('pentagonSecondInput');
+
+    const pentagonInputFieldPString = pentagonInputFieldP.value;
+    const pentagonInputFieldBString = pentagonInputFieldB.value;
+    const pentagonInputFieldPValue = parseFloat(pentagonInputFieldPString);
+    const pentagonInputFieldBValue = parseFloat(pentagonInputFieldBString);
+
+    /*
+     *TODO: Input validation
+     */
+    const inputValidation = validateInput(pentagonInputFieldPValue,pentagonInputFieldBValue);
+
+    if (inputValidation){
+        const result = calculateResult('pentagon',pentagonInputFieldPValue,pentagonInputFieldBValue);
+    }
+    else{
+        alert('Enter Valid Number');
+    }
+})
+// For ellipse
+document.getElementById('btn-ellipse').addEventListener('click',function(){
+    const ellipseInputFieldA = document.getElementById('ellipseFirstInput');
+    const ellipseInputFieldB = document.getElementById('ellipseSecondInput');
+
+    const ellipseInputFieldAString = ellipseInputFieldA.value;
+    const ellipseInputFieldBString = ellipseInputFieldB.value;
+    const ellipseInputFieldAValue = parseFloat(ellipseInputFieldAString);
+    const ellipseInputFieldBValue = parseFloat(ellipseInputFieldBString);
+    /*
+     *TODO: Input validation
+     */
+    const inputValidation = validateInput(ellipseInputFieldAValue,ellipseInputFieldBValue);
+
+    if (inputValidation){
+        const result = calculateResult('ellipse',ellipseInputFieldAValue,ellipseInputFieldBValue);
+    }
+    else{
+        alert('Enter Valid Number');
+    }
+})

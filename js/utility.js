@@ -42,6 +42,16 @@ function validateInput(firstValue, secondValue) {
         const result = resultfloat.toFixed(2);
         myCreateFunction('Rhombus',result);
     } 
+    else if (geometryType == "pentagon") {
+        const resultfloat = (0.5 *  valueA * valueB);
+        const result = resultfloat.toFixed(2);
+        myCreateFunction('Pentagon',result);
+    } 
+      else if (geometryType == "ellipse") {
+        const resultfloat = ( Math.PI *  valueA * valueB);
+        const result = resultfloat.toFixed(2);
+        myCreateFunction('Ellipse',result);
+    } 
     else return 0;
 }
 
