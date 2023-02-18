@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Geometry Genius</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <header class="flex flex-row justify-between bg-blue-100 my-3 mx-2">
         <div class="pl-4 py-3">
@@ -14,97 +16,108 @@
             <h3 class="font-medium">Geometry Genius</h3>
         </div>
         <div class="py-5 pr-4">
-            <button class="bg-blue-600	text-white font-bold px-5 py-2 rounded">Blog</button>
+            <button id="btn-blog" class="bg-blue-600 text-white font-bold px-5 py-2 rounded">Blog</button>
         </div>
     </header>
-    <body>
+
+    <main>
         <div class="grid grid-cols-12 gap-4 mx-2">
-            <div class="col-span-9 grid grid-cols-3 gap-4 mx-2 my-8">
-                <div class="border rounded">
+            <div class="col-span-12 grid grid-cols-1 gap-4 mx-2 my-8 sm:col-span-9 sm:grid-cols-3">
+                <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
                         <img src="images/triangle.png" alt="">
                         <h1 class="font-bold mt-4 mb-2">Triangle</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = 0.5 * b * h</h3>
                         <div>
-                        <input type="text" placeholder="b" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                        <input type="text" placeholder="h" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
+                            <input id="triangleFirstInput" type="text" placeholder="b" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
+                            <input id="triangleSecondInput" type="text" placeholder="h" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
                         </div>
                         <br>
-                        <button class="bg-blue-600 text-white font-bold px-24 py-2 rounded" >Calculate</button>
+                        <button id="btn-triangle" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
-                <div class="border rounded">
+                <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
                         <img src="images/rectangle.png" alt="">
-                        <h1 class="font-bold mt-4 mb-2">Rectangle</h1>
-                        <h3 class="font-medium text-sm mb-2">Area (A) = w * l</h3>
-                        <div>
-                            <input type="text" placeholder="w" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                            <input type="text" placeholder="l" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                        </div>
+                            <h1 class="font-bold mt-4 mb-2">Rectangle</h1>
+                            <h3 class="font-medium text-sm mb-2">Area (A) = w * l</h3>
+                            <div>
+                                <input id="rectangleFirstInput" type="text" placeholder="w" class="bg-gray-200 w-24"> <span
+                                    class="text-sm">cm</span>
+                                <input id="rectangleSecondInput" type="text" placeholder="l" class="bg-gray-200 w-24"> <span
+                                    class="text-sm">cm</span>
+                            </div>
                         <br>
-                        <button class="bg-blue-600 text-white font-bold px-24 py-2 rounded" >Calculate</button>
+                        <button id="btn-rectangle" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
-                <div class="border rounded">
+                <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
                         <img src="images/parallelogram.png" alt="">
-                        <h1 class="font-bold mt-4 mb-2">Parallelogram</h1>
-                        <h3 class="font-medium text-sm mb-2">Area (A) = b * h</h3>
-                        <div>
-                            <input type="text" placeholder="b" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                            <input type="text" placeholder="h" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                        </div>
+                            <h1 class="font-bold mt-4 mb-2">Parallelogram</h1>
+                            <h3 class="font-medium text-sm mb-2">Area (A) = b * h</h3>
+                            <div>
+                                <input id="parallelogramFirstInput" type="text" placeholder="b" class="bg-gray-200 w-24"> <span
+                                    class="text-sm">cm</span>
+                                <input id="parallelogramSecondInput" type="text" placeholder="h" class="bg-gray-200 w-24"> <span
+                                    class="text-sm">cm</span>
+                            </div>
                         <br>
-                        <button class="bg-blue-600 text-white font-bold px-24 py-2 rounded" >Calculate</button>
+                        <button id="btn-parallelogram" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
-                <div class="border rounded">
+                <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
                         <img src="images/rhombus.png" alt="">
                         <h1 class="font-bold mt-4 mb-2">Rhombus</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = 0.5 * d<sub>1</sub>* d<sub>2</sub></h3>
                         <div>
-                            <input type="text" placeholder="d1" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                            <input type="text" placeholder="d2" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
+                            <input id="rhobusFirstInput" type="text" placeholder="d1" class="bg-gray-200 w-24"> <span
+                                class="text-sm">cm</span>
+                            <input id="rhombusSecondInput" type="text" placeholder="d2" class="bg-gray-200 w-24"> <span
+                                class="text-sm">cm</span>
                         </div>
                         <br>
-                        <button class="bg-blue-600 text-white font-bold px-24 py-2 rounded" >Calculate</button>
+                        <button id="btn-rhommbus" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
-                <div class="border rounded">
+                <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
                         <img src="images/pentagon.png" alt="">
                         <h1 class="font-bold mt-4 mb-2">Pentagon</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = 0.5 * p * b</h3>
                         <div>
-                            <input type="text" placeholder="p" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                            <input type="text" placeholder="b" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
+                            <input id="pentagonFirstInput" type="text" placeholder="p" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
+                            <input id="pentagonSecondInput" type="text" placeholder="b" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
                         </div>
                         <br>
-                        <button class="bg-blue-600 text-white font-bold px-24 py-2 rounded" >Calculate</button>
+                        <button id="btn-pentagon" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
-                <div class="border rounded">
+                <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
                         <img src="images/ellipse.png" alt="">
                         <h1 class="font-bold mt-4 mb-2">Ellipse</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = &pi;ab</h3>
                         <div>
-                            <input type="text" placeholder="a" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
-                            <input type="text" placeholder="b" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
+                            <input id="EllipseFirstInput" type="text" placeholder="a" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
+                            <input id="EllipseSecondInput" type="text" placeholder="b" class="bg-gray-200 w-24"> <span class="text-sm">cm</span>
                         </div>
                         <br>
-                        <button class="bg-blue-600 text-white font-bold px-24 py-2 rounded" >Calculate</button>
+                        <button id="btn-ellipse" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
             </div>
-            <div class="border rounded grid col-span-3 my-7">
+            <div class="border rounded grid  col-span-12 sm:col-span-3 my-7">
                 <div class="grid justify-items-center my-5">
                     <u class="font-bold">Area Calculation</u>
                 </div>
             </div>
         </div>
-    </body>
+    </main>
+    <script src="js/utility.js"></script>
+    <script src="js/triangle.js"></script>
+    <script src="js/cart-color.js"></script>
 </body>
+
 </html>
