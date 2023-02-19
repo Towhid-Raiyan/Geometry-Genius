@@ -10,32 +10,67 @@
 </head>
 
 <body>
-    <h1 class="font-bold my-3 mx-3">1. What is DOM? What is the purpose of DOM?</h1>
-    <P class="font-medium my-3 mx-3">
-        The Document Object Model in short term DOM, is a programming interface for web documents. It defines a standard
-        for accessing documments. By DOM we can access documents, can update content, structure or style of a document.
-    </P>
-    <h1 class="font-bold my-3 mx-3">2. How will you select HTML elements using DOM? Name the DOM methods.</h1>
-    <p class="font-medium my-3 mx-3">
-        By 5 ways we can select HTML elements using DOM. Name of the methods given below:<br>
-        i. getElementsByTagName()<br>
-        ii. getElementsByClassName()<br>
-        iii. getElementById()<br>
-        iv. querySelector()<br>
-        v. querySelectorAll() <br>
-    </p>
-    <h1 class="font-bold my-3 mx-3">3. What is event bubble?</h1>
-    <p class="font-medium my-3 mx-3">
-        Event Bubble is an important element of DOM. In a event bubble system it's direct an event to its target. When
-        we click an element, an event directed to its element. Then if a particular event handler set from before for
-        that parrticular element, then event handler get triggered. Then the event bubble up from the elements to its
-        parent till root.
-    </p>
-    <h1 class="font-bold my-3 mx-3">4. What is a callback function and why will you use it?</h1>
-    <p class="font-medium my-3 mx-3">
-        When we send an individual function as a parameter of another particular function we call it a callback
-        function.
-    </p>
+    <!-- header section -->
+    <header class="flex flex-row justify-between bg-yellow-200 my-3 mx-2 rounded">
+        <div class="pl-4 py-3">
+            <h1 class="text-2xl font-bold">Interactive</h1>
+            <h3 class="font-medium">Geometry Genius</h3>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold mr-5 mt-5">Blog Page</h1>
+        </div>
+    </header>
+    <main>
+        <!-- carts for given four question -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-4">
+            <div class="border rounded gap-4 mx-3 bg-orange-200">
+                <h1 class="font-bold my-3 mx-3">1. What is DOM? What is the purpose of DOM?</h1>
+                <P class="font-medium my-3 mx-3">
+                    The Document Object Model in short term DOM, is a programming interface for web documents. It
+                    defines a
+                    standard
+                    for accessing documments. By DOM we can access documents, can update content, structure or style of
+                    a
+                    document.
+                </P>
+            </div>
+            <div class="border rounded gap-4 mx-3 bg-orange-200">
+                <h1 class="font-bold my-3 mx-3">2. How will you select HTML elements using DOM? Name the DOM methods.
+                </h1>
+                <p class="font-medium my-3 mx-3">
+                    By 5 ways we can select HTML elements using DOM. Name of the methods given below:<br>
+                    i. getElementsByTagName()<br>
+                    ii. getElementsByClassName()<br>
+                    iii. getElementById()<br>
+                    iv. querySelector()<br>
+                    v. querySelectorAll() <br>
+                </p>
+            </div>
+            <div class="border rounded mx-3 bg-orange-200">
+                <h1 class="font-bold my-3 mx-3">3. What is event bubble?</h1>
+                <p class="font-medium my-3 mx-3">
+                    Event Bubble is an important element of DOM. In a event bubble system it's direct an event to its
+                    target.
+                    When
+                    we click an element, an event directed to its element. Then if a particular event handler set from
+                    before
+                    for
+                    that parrticular element, then event handler get triggered. Then the event bubble up from the
+                    elements to
+                    its
+                    parent till root.
+                </p>
+            </div>
+            <div class="border rounded gap-4 mx-3 bg-orange-200">
+                <h1 class="font-bold my-3 mx-3">4. What is a callback function and why will you use it?</h1>
+                <p class="font-medium my-3 mx-3">
+                    When we send an individual function as a parameter of another particular function we call it a
+                    callback function. In this case the function which we called will be executed first and then will
+                    execute the function which we sent as a parameter.
+                </p>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

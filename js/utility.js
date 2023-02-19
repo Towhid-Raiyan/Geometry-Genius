@@ -72,5 +72,5 @@ function validateInput(firstValue, secondValue) {
    cell1.innerHTML = rowIn;
    cell2.innerHTML = shape;
    cell3.innerHTML = areaValue+'cm<sup>2</sup></p>';
-   cell4.innerHTML = "<button class='btn btn-info btn-sm text-white normal-case'><p>Convert to m<sup>2</sup></p></button>"; 
+   cell4.innerHTML = "<button class='btn bg-blue-600 text-white py-2 px-2 rounded font-bold btn-sm text-white normal-case'><p>Convert to m<sup>2</sup></p></button>"; 
  }

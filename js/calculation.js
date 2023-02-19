@@ -7,7 +7,8 @@ document.getElementById('btn-triangle').addEventListener('click',function(){
     const triangleInputFieldHString = triangleInputFieldH.value;
     const triangleInputFieldBValue = parseFloat(triangleInputFieldBString);
     const triangleInputFieldHValue = parseFloat(triangleInputFieldHString);
-
+    triangleInputFieldB.value = '';
+    triangleInputFieldH.value = '';
 
     /*
      *TODO: Input validation -> isnegative, isnumber , isNan
@@ -32,6 +33,8 @@ document.getElementById('btn-rectangle').addEventListener('click',function(){
     const rectangleInputFieldLString = rectangleInputFieldL.value;
     const rectangleInputFieldWValue = parseFloat(rectangleInputFieldWString);
     const rectangleInputFieldLValue = parseFloat(rectangleInputFieldLString);
+    rectangleInputFieldW.value = '';
+    rectangleInputFieldL.value = '';
 
     /*
      *TODO: Input validation
@@ -55,6 +58,8 @@ document.getElementById('btn-parallelogram').addEventListener('click',function()
     const parallelogramInputFieldHString = parallelogramInputFieldH.value;
     const parallelogramInputFieldBValue = parseFloat(parallelogramInputFieldBString);
     const parallelogramInputFieldHValue = parseFloat(parallelogramInputFieldHString);
+    parallelogramInputFieldB.value = '';
+    parallelogramInputFieldH.value = '';
 
     /*
      *TODO: Input validation
@@ -78,6 +83,8 @@ document.getElementById('btn-rhombus').addEventListener('click',function(){
     const rhombusInputFieldD2String = rhombusInputFieldD2.value;
     const rhombusInputFieldD1Value = parseFloat(rhombusInputFieldD1String);
     const rhombusInputFieldD2Value = parseFloat(rhombusInputFieldD2String);
+    rhombusInputFieldD1.value = '';
+    rhombusInputFieldD2.value = '';
 
     /*
      *TODO: Input validation
@@ -102,6 +109,9 @@ document.getElementById('btn-pentagon').addEventListener('click',function(){
     const pentagonInputFieldBString = pentagonInputFieldB.value;
     const pentagonInputFieldPValue = parseFloat(pentagonInputFieldPString);
     const pentagonInputFieldBValue = parseFloat(pentagonInputFieldBString);
+    pentagonInputFieldP.value = '';
+    pentagonInputFieldB.value = '';
+
 
     /*
      *TODO: Input validation
@@ -124,6 +134,10 @@ document.getElementById('btn-ellipse').addEventListener('click',function(){
     const ellipseInputFieldBString = ellipseInputFieldB.value;
     const ellipseInputFieldAValue = parseFloat(ellipseInputFieldAString);
     const ellipseInputFieldBValue = parseFloat(ellipseInputFieldBString);
+
+    ellipseInputFieldA.value ='';
+    ellipseInputFieldB.value ='';
+
     /*
      *TODO: Input validation
      */

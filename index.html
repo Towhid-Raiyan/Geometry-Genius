@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <!-- tailwind css link -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="flex flex-row justify-between bg-blue-100 my-3 mx-2">
+    <!-- navigation part -->
+    <header class="flex flex-row justify-between bg-blue-100 my-3 mx-2 rounded">
         <div class="pl-4 py-3">
             <h1 class="text-2xl font-bold">Interactive</h1>
             <h3 class="font-medium">Geometry Genius</h3>
@@ -21,11 +23,14 @@
     </header>
 
     <main>
-        <div class="grid grid-cols-12 gap-4 mx-2">
+        <div class="flex flex-col sm:flex-row gap-4 mx-2">
             <div class="col-span-12 grid grid-cols-1 gap-4 mx-2 my-8 sm:col-span-9 sm:grid-cols-3">
+                <!-- triangle cart -->
                 <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
-                        <img src="images/triangle.png" alt="">
+                        <div class="max-h-48">
+                            <img  src="images/triangle.png" alt="">
+                        </div>
                         <h1 class="font-bold mt-4 mb-2">Triangle</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = 0.5 * b * h</h3>
                         <div>
@@ -36,9 +41,10 @@
                         <button id="btn-triangle" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
+                <!-- rectangle cart -->
                 <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
-                        <img src="images/rectangle.png" alt="">
+                        <img class="h-full" src="images/rectangle.png" alt="">
                             <h1 class="font-bold mt-4 mb-2">Rectangle</h1>
                             <h3 class="font-medium text-sm mb-2">Area (A) = w * l</h3>
                             <div>
@@ -51,9 +57,10 @@
                         <button id="btn-rectangle" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
+                <!-- Parallelogram cart -->
                 <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
-                        <img src="images/parallelogram.png" alt="">
+                        <img class="h-full" src="images/parallelogram.png" alt="">
                             <h1 class="font-bold mt-4 mb-2">Parallelogram</h1>
                             <h3 class="font-medium text-sm mb-2">Area (A) = b * h</h3>
                             <div>
@@ -66,9 +73,10 @@
                         <button id="btn-parallelogram" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
+                <!-- Rhombus cart -->
                 <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
-                        <img src="images/rhombus.png" alt="">
+                        <img class="h-full" src="images/rhombus.png" alt="">
                         <h1 class="font-bold mt-4 mb-2">Rhombus</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = 0.5 * d<sub>1</sub>* d<sub>2</sub></h3>
                         <div>
@@ -81,9 +89,10 @@
                         <button id="btn-rhombus" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
+                <!-- Pentagon cart -->
                 <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
-                        <img src="images/pentagon.png" alt="">
+                        <img class="h-full" src="images/pentagon.png" alt="">
                         <h1 class="font-bold mt-4 mb-2">Pentagon</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = 0.5 * p * b</h3>
                         <div>
@@ -94,9 +103,10 @@
                         <button id="btn-pentagon" class="bg-blue-600 text-white font-bold px-24 py-2 rounded">Calculate</button>
                     </div>
                 </div>
+                <!-- Ellipse cart -->
                 <div id="hover-color" class="border rounded">
                     <div class="grid justify-items-center my-5 mx-5">
-                        <img src="images/ellipse.png" alt="">
+                        <img class="h-full" src="images/ellipse.png" alt="">
                         <h1 class="font-bold mt-4 mb-2">Ellipse</h1>
                         <h3 class="font-medium text-sm mb-2">Area (A) = &pi;ab</h3>
                         <div>
@@ -108,19 +118,20 @@
                     </div>
                 </div>
             </div>
-            <div class="border rounded grid  col-span-12 sm:col-span-3 my-7">
-                <div class="grid justify-items-center mt-5">
-                    <h3 class="text-xl font-semibold underline text-center">Area Calculation</h3>
+            <div class="basis-1/4 h-[34rem] border rounded-xl mt-7">
+                <div class="mt-5">
+                  <h3 class="text-xl font-semibold underline text-center mb-3">Area Calculation</h3>
                 </div>
                 <div class="overflow-x-auto" >
-                    <table class="table table-auto w-full" id="area-result">
-                        <!-- row  -->
-        
-                    </table>
+                  <table class="table table-auto w-full" id="area-result">
+                      <!-- row  -->
+      
+                  </table>
                 </div>
             </div>
         </div>
     </main>
+    <!-- js file connections -->
     <script src="js/utility.js"></script>
     <script src="js/calculation.js"></script>
     <script src="js/cart-color.js"></script>
